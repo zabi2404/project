@@ -1066,7 +1066,7 @@ nav{
 }
 
 /* FOR TAB */
-/*  
+ 
 
 
 @media (max-width:1000px) {
@@ -1074,7 +1074,7 @@ nav{
   
 
 
-  header
+  /* header */
   .Container{
  display: flex;
  flex-direction: column;
@@ -1101,8 +1101,8 @@ nav{
   left: auto;
   opacity: .5;
 }
-
-SECOND SECTION
+/* 
+SECOND SECTION */
 
  .Listing-Block{
     display: flex;
@@ -1123,15 +1123,23 @@ SECOND SECTION
   }
 
   .line-2 p{
-    margin-right: 2rem;
+        margin-right: auto !important;
   }
 
+  .price{
+        font-size: 3rem;
+            margin: 6px 6px !important;
+
+  }
   .gradient2{
     top: auto;
     opacity: .5;
   }
 
 
+  .card-header{
+    padding-top: .5rem;
+  }
 
   .Feature-card{
     display: grid;
@@ -1145,7 +1153,7 @@ SECOND SECTION
     margin:  1rem;
   }
 
-  SIXTH SECTION
+  /* SIXTH SECTION */
   .Ledger-Section{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1153,4 +1161,4 @@ SECOND SECTION
   }
   
 
-}  */
+}  
