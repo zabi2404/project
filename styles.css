@@ -1,5 +1,3 @@
-
-
 body {
   background-color: black;
   color: white;
@@ -127,7 +125,7 @@ body {
 .Container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row: 1fr;
+
   margin: 6rem 2rem 1rem 4rem;
 }
 
@@ -187,7 +185,7 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.card-header>h4 {
+.card-header > h4 {
   display: inline;
 }
 
@@ -196,7 +194,8 @@ h1 {
   margin: 14px 6px;
 }
 
-.line-1>p {}
+.line-1 > p {
+}
 
 .price {
   font-size: 2rem;
@@ -303,11 +302,13 @@ td {
 }
 
 .Coin-Table {
-  background: linear-gradient(180deg,
-      rgba(42, 123, 155, 1) 0%,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(0, 0, 0, 0.86) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0.86) 100%
+  );
   background: rgba(255, 255, 255, 0.11);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -322,16 +323,19 @@ td {
 .Coin-Table .white-gradient {
   bottom: 36px;
   top: 494px;
+  display: none;
 }
 
 /* fourth section */
 
 .Coin-Table2 {
-  background: linear-gradient(180deg,
-      rgba(42, 123, 155, 1) 0%,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(0, 0, 0, 0.86) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0.86) 100%
+  );
   background: rgba(255, 255, 255, 0.11);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -344,6 +348,7 @@ td {
 
 .Coin-Table2 .white-gradient {
   top: 494px;
+  display: none;
 }
 
 .Coin-Table2 table {
@@ -434,11 +439,13 @@ select {
 }
 
 .Fcard {
-  background: linear-gradient(180deg,
-      rgba(42, 123, 155, 1) 0%,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(0, 0, 0, 0.86) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0.86) 100%
+  );
   background: rgba(255, 255, 255, 0.11);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -494,11 +501,13 @@ select {
 }
 
 .LedgerCard {
-  background: linear-gradient(180deg,
-      rgba(42, 123, 155, 1) 0%,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(0, 0, 0, 0.86) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0.86) 100%
+  );
   background: rgba(255, 255, 255, 0.11);
   border-radius: 40px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -552,11 +561,13 @@ select {
 .GetStarted-Section {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background: linear-gradient(180deg,
-      rgba(42, 123, 155, 1) 0%,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(0, 0, 0, 0.86) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0.86) 100%
+  );
   background: rgba(255, 255, 255, 0.11);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -695,3 +706,451 @@ footer {
   /* justify-content: center; */
 }
 
+@media (max-width: 320px) {
+  .background-image {
+    top: 271px;
+  }
+
+  /* FIRST SECTION */
+  .Container {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+  }
+
+  .heading {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 0.5rem;
+  }
+
+  .myButton {
+    font-weight: bold;
+    padding: 6px 8px;
+    font-size: 8px;
+  }
+
+  .hero_image {
+    width: 100%;
+  }
+
+  .gradient {
+    height: 80%;
+    width: 80%;
+
+    left: auto;
+    opacity: 0.5;
+  }
+
+  /* second section */
+
+  .Listing-Block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Coins {
+            grid-template-columns: 1fr 1fr;
+
+    margin: 2rem 0 2rem;
+  }
+  .card-header img {
+    width: 20%;
+    height: 20%;
+  }
+.card-header h4{
+  font-size: .7rem;
+  font-weight: bold;
+}
+
+.Card p {
+        font-size: .8rem;
+    margin: -8px 2px;}
+
+
+  .Card {
+height: 95px;
+        width: 120px;
+  }
+
+  .line-1 p[style] {
+    font-size: .5rem;
+  }
+.line-2 p[style]{
+  font-size: .5rem;
+  font-weight: unset;
+}
+
+  .line-2 p {
+    font-size: .6rem;
+    font-weight: bold;
+    margin: 0 0 0 0 !important;
+  }
+
+  .gradient2 {
+    left: auto;
+    opacity: 0.5;
+    height: 100%;
+    width: 75%;
+    top: 1000px;
+  }
+
+  .listing-box img {
+    height: 20px;
+    width: 20px;
+  }
+
+  /* THIRD SECTION */
+  .Theader h4 {
+    font-size: 0.5rem;
+  }
+
+  .Coin-Table {
+    margin: 1rem;
+    overflow-x: scroll;
+    width: 300px;
+    margin: 1rem 1rem 1rem 10px;
+  }
+table{
+width: max-content; /* 👈 Prevent the table from shrinking */
+  border-collapse: collapse;
+}
+  
+
+  .form-control1 {
+    width: 55%;
+    font-size: 0.5rem;
+    text-align: center;
+  }
+
+  /* FOURTH SECTION */
+
+  .Fheader{
+    margin-bottom: 1.5rem;
+  }
+  .Fheader h4 {
+    font-size: 0.5rem;
+  }
+
+  .Coin-Table-nav {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    flex-wrap: wrap;
+    margin: 1rem;
+        
+  }
+  .vertical-line {
+    all: unset;
+    display: none;
+  }
+
+  .Coin-Table2{
+           overflow-x: scroll;
+        margin: 1rem;
+
+  }
+
+tr{
+  font-size: .5rem;
+}
+
+th img{
+      height: 100%;
+    width: 50%;
+}
+
+  .Coin-Table-nav button {
+    margin-bottom: .2rem !important;
+    margin: .2rem;
+    font-size: .5rem;
+            width: 25%;
+                margin: 0;
+  }
+
+  select{
+    font-size: .5rem;
+            width: 50%;
+  }
+
+  .Coin-Table-nav .All {
+            width: 25%;
+    margin: 0;
+  }
+
+  .Fiheader h4 {
+    width: auto;
+    font-size: 1rem;
+  }
+
+  .Feature-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .C1,
+  .C2,
+  .C3,
+  .C4 {
+    position: unset;
+    margin: 1rem;
+  }
+
+  .Fcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* SIXTH SECTION */
+  .Sheader h4 {
+    font-size: .6rem;
+    text-align: center;
+  }
+.Sheader{margin: 0 1.5rem;}
+  
+
+  .Ledger-Section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: auto;
+    margin: .5rem;
+  }
+
+  .LedgerCard {
+    border-radius: 25px;
+    margin: .3rem;
+  }
+  .LC-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .LC-section h4 {
+    font-size: 1rem;
+  }
+
+  .LC-section p {
+    margin-bottom: 0;
+  }
+  .LC-section a {
+    font-size: 0.6rem;
+  }
+
+/* SEVENTH SECTION */
+.Seventh-section{
+      margin: 1rem;
+
+}
+
+.Seventh-section img{
+        width: 35%;
+
+}
+
+
+.first-half h1{
+  font-size: 1rem;
+}
+
+.GetStarted-Section{
+  padding: unset;
+  margin: unset;
+}
+
+/* FOOTER SECTION */
+.footer-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-part ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.footer-part{
+  align-items: unset;
+  margin-bottom: .2rem;
+}
+
+.fp1{
+  margin-left: auto;
+}
+
+.footer-part ul li{
+margin: unset;
+}
+
+.fp1 img{
+margin-bottom: unset !important;
+height: 100%;
+    width: 100%;
+
+}
+
+.fp1 p {
+    margin-bottom: .3rem;
+}
+.icon-div {
+            height: 20px;
+        width: 20px;
+padding: 0.3rem;
+    padding-bottom: 0.6rem;
+    
+  
+  }
+
+.footer-part ul{
+  font-size: .5rem;
+}
+
+.fp-li{
+  font-weight: bolder;
+}
+
+.white-gradient{
+  left: auto;
+}
+
+.sm-2{
+  width: 30%;
+}
+
+nav{
+  font-size: .5rem;
+}
+
+.form-control{
+  font-size: .5rem;
+}
+
+
+
+
+.icon {
+ margin: .5rem .5rem 0 7rem !important;
+    height: 20px;
+    width: 20px;}
+
+  .profile-icon {
+    margin: 0 auto;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: -21px;
+    left: 9px;
+  }
+
+  .profile-icon img {
+    height: 20px;
+    width: 20px;
+
+  }
+
+}
+
+/* FOR TAB */
+/*  
+
+
+@media (max-width:1000px) {
+
+  
+
+
+  header
+  .Container{
+ display: flex;
+ flex-direction: column;
+ margin-bottom:4rem;
+  }
+
+  .heading{
+    order: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+ 
+ }
+
+.hero-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient{
+  left: auto;
+  opacity: .5;
+}
+
+SECOND SECTION
+
+ .Listing-Block{
+    display: flex;
+  flex-direction: column;
+  }
+
+  .Coins{
+    display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .Card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .line-2 p{
+    margin-right: 2rem;
+  }
+
+  .gradient2{
+    top: auto;
+    opacity: .5;
+  }
+
+
+
+  .Feature-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+    .C1,.C2,.C3,.C4{
+    position: unset;
+    grid-column-start:auto;
+    margin:  1rem;
+  }
+
+  SIXTH SECTION
+  .Ledger-Section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  
+
+}  */
