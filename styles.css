@@ -105,9 +105,9 @@ body {
 
 .g1 {
   top: 100px;
-  height: 620px;
+  height: 40vw;
   z-index: -1;
-  width: 600px;
+  width: 45vw;
   opacity: 0.3;
   left: auto;
 }
@@ -272,7 +272,7 @@ height: 185px;
   top: 0;
   left: 0;
  border-radius: 16px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .GradientL{
@@ -717,8 +717,7 @@ button img{
   box-shadow: inset 1px 2px 7px 0.1px #1ab593;
   background-color: #292929;
   border: none;
-  padding: 0.2rem .6rem .2rem .6rem;
-  /* width: 10%; */
+  padding: 0.3rem .7rem .3rem .7rem;
   color: white;
   margin-left: 0.5rem;
 }
@@ -742,7 +741,7 @@ select {
   box-shadow: inset 1px 2px 7px 0.1px #1ab593;
   background-color: #292929;
   border: none;
-  padding: 0.2rem .6rem .4rem .6rem;
+  padding: 0.3rem .7rem .3rem .7rem;
   /* width: 10%; */
   color: white;
   margin-left: 0.5rem;
@@ -837,6 +836,7 @@ a img{
 background: linear-gradient(90deg, rgba(0, 169, 131, 1) 0%, rgba(182, 255, 239, 1) 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+font-family: customFont;
 }
 .Feature-card {
   display: grid;
@@ -997,7 +997,7 @@ display: flex
 }
 
 .LFC h4{
-  font-size: 3.5rem;
+  font-size: 3.2rem;
 }
 
 .LedgerCard img {
@@ -1141,7 +1141,8 @@ background: linear-gradient(90deg,rgba(0, 169, 131, 1) 0%, rgba(182, 255, 239, 1
 
 .GetStarted-Section .first-half {
   margin: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 .first-half h1 {
@@ -1220,8 +1221,8 @@ footer {
 }
 
 .fp1 img {
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
 }
 
 .green-gradient {
@@ -1236,13 +1237,13 @@ footer {
 }
 
 .logo {
-  width: 32% !important;
+  width: 165px !important;
   height: auto !important;
 }
 
 .icon-div {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   background-color: #292929;
   border-radius: 50%;
   /* box-shadow: inset 1px 5px 7px 1px #1ab593; */
@@ -1250,7 +1251,8 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 0.2rem;
-  padding: 0.5rem;
+ 	padding: 0rem 0.5rem;
+  padding-right: 0.7rem;
 }
 
 .footer-icon {
@@ -1322,6 +1324,466 @@ background: linear-gradient(90deg,rgba(0, 169, 131, 1) 0%, rgba(182, 255, 239, 1
 }
 /* .. */
 
-/* p{
-  font-size: 1.5rem;
-} */
+
+
+
+
+
+
+
+	@media (max-width: 480px) {
+  .background-image {
+    top: 271px;
+  }
+
+  /* NAVBAR */
+   .sm-2 {
+    width: 30%;
+  }
+
+  nav {
+    font-size: 0.5rem;
+  }
+
+
+  /* FIRST SECTION */
+  .Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+  }
+
+  .heading {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 5rem;
+  }
+  h1 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 0.4rem;
+  }
+
+  .myButton {
+    font-weight: bold;
+    padding: 4px 6px;
+		font-size: 6px;
+  }
+
+  .heading p {
+	text-align: center;
+margin: .5rem auto;
+}
+
+  .hero_image {
+    width: 40%;
+  }
+
+  .hero-section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+  .gradient {
+    height: 80%;
+    width: 80%;
+
+    left: auto;
+    opacity: 0.5;
+  }
+
+  /* second section */
+
+
+ .second-container {
+	margin-top: 3rem;
+} 
+
+  h2{
+    font-size: 1rem;
+  }
+
+  .continer{
+  		height: initial;
+		width: 150px;
+  } 
+  .Listing-Block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .line-1 img{
+    margin: auto;
+  }
+
+  .Coins {
+    grid-template-columns: 1fr 1fr;
+
+    margin: .5rem  2rem ;
+  }
+  .card-header img {
+    width: 20%;
+    height: 20%;
+  }
+  .card-header h4 {
+    font-size: 0.7rem !important;
+    font-weight: bold;
+  }
+
+  .Card p {
+    font-size: 0.8rem;
+    margin: -8px 2px;
+  }
+
+  .Card {
+   		height: 100%;
+		width: 100%;
+  }
+
+  .line-1 p[style] {
+    font-size: 0.5rem;
+  }
+  .line-2 p[style] {
+    font-size: 0.5rem;
+    font-weight: unset;
+  }
+
+  .line-2 p {
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin: 0 0 0 0 !important;
+  }
+
+  .gradient2 {
+    left: auto;
+    opacity: 0.5;
+    height: 100%;
+    width: 75%;
+    top: 1000px;
+  }
+  .listing-box {
+    margin-top: 32px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .listing-box table{
+    width: 350px;
+  }
+  .listing-box img {
+    height: 15px;
+    width: 15px;
+  }
+
+  /* THIRD SECTION */
+  .Theader{
+    margin-top: 1rem;
+    margin-bottom: auto;
+  }
+  .Theader div{
+    margin: auto;
+  }
+  .Theader h4 {
+    font-size: 0.5rem;
+  }
+
+  .Coin-Table {
+    margin: 1rem 1rem 1rem 10px;
+    overflow-x: scroll;
+    width: 300px;
+  }
+  table {
+    width: max-content; 
+    border-collapse: collapse;
+  }
+
+  .form-control1 {
+    width: 55%;
+    font-size: 0.5rem;
+    text-align: center;
+  }
+  .third-section{
+    margin-bottom: auto;
+  }
+
+  /* FOURTH SECTION */
+.fourth-section{
+  	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+  .Fheader {
+    margin-bottom: 1.5rem;
+  }
+  .Fheader h4 {
+    font-size: 0.5rem;
+  }
+
+  .Coin-Table-nav {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+  .vertical-line {
+    all: unset;
+    display: none;
+  }
+
+  .Coin-Table2 {
+    overflow-x: scroll;
+    margin: 1rem;
+  }
+
+  tr {
+    font-size: 0.5rem;
+  }
+
+  th img {
+    height: 100%;
+    width: 10%;
+  }
+
+  .Coin-Table-nav button {
+    margin-bottom: 0.2rem !important;
+    margin: 0.2rem;
+    font-size: 0.5rem;
+    width: 25%;
+    margin: 0;
+  }
+
+
+  select {
+    font-size: 0.5rem;
+    width: 50%;
+  }
+
+
+  .Coin-Table-nav .All {
+    width: 25%;
+    margin: 0;
+  }
+
+  .Fheader div{
+    margin-bottom: 0;
+  }
+
+
+  /* fifth section */
+
+  .Feature-card img{
+    width: 50%;
+    height: 50%;
+  }
+  .Fiheader h4 {
+    width: auto;
+    font-size: 1rem;
+  }
+
+  .Feature-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .C1,
+  .C2,
+  .C3,
+  .C4 {
+    position: unset;
+    margin: 1rem;
+  }
+
+  .Fcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 40%;
+    height: 40%;
+    padding: .5rem;
+    margin: .5rem;
+  }
+
+  .Fcard p,h4{
+    margin-bottom: .5rem;
+  }
+
+  /* SIXTH SECTION */
+  .Sheader p {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  .Sheader {
+    margin: 0 1.5rem;
+    text-align: center;
+  }
+
+  .Ledger-Section {
+    display: grid;
+   		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+    margin: auto;
+    margin: 0.5rem;
+  }
+
+  .LedgerCard {
+  
+    margin: 0 auto;
+height: 150px;
+	width: 150px;
+	border-radius: 26px;
+  /* margin-left: 2.5rem; */
+  }
+  .LC-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    
+  }
+  .LC-section h4 {
+   font-size: .5rem !important;
+		margin-bottom: .2rem;
+  }
+
+  .LC-section p {
+    margin-bottom: 0;
+    font-size: 0.3rem;
+  }
+  .LC-section a {
+   font-size: 0.3rem;
+  }
+a img {
+	width: 20% !important;
+	margin-left: .1rem;
+	margin-bottom: .1rem;
+}
+
+.LC{
+margin: .3rem auto;
+    
+height: 150px;
+	width: 150px;
+	border-radius: 26px;
+  
+}
+  /* SEVENTH SECTION */
+  .Seventh-section {
+   		margin: 5rem 1rem 2rem 1rem;
+  }
+
+
+  .first-half h1 {
+    font-size: 1rem;
+  }
+
+  .GetStarted-Section {
+    padding: unset;
+    margin: unset;
+  }
+
+  .main-img {
+	position: absolute;
+	bottom: 1px;
+	margin-left: auto;
+   width: 25%;
+  }
+
+  .GetStarted-Section .first-half{
+    margin: 1rem;
+  }
+
+  /* FOOTER SECTION */
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fp1{
+    margin-left: 0 !important;
+  }
+
+  .logo{
+    width: 20% !important;
+  }
+  .footer-part ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .footer-part {
+    align-items: unset;
+    margin-bottom: 0.2rem;
+  }
+
+  .fp1 {
+    margin-left: auto;
+  }
+
+  .footer-part ul li {
+    margin: unset;
+  }
+
+  .footer-icon img {
+    margin-bottom: unset !important;
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .fp1 p {
+    margin-bottom: 0.3rem;
+    width: 50%;
+  }
+  .icon-div {
+    height: 20px;
+    width: 20px;
+   		padding: .2rem .3rem .5rem .1rem;
+  }
+
+  .footer-part ul {
+    font-size: 0.5rem;
+  }
+
+  .fp-li {
+    font-weight: bolder;
+  }
+
+
+
+  .white-gradient {
+    left: auto;
+  }
+
+  
+  .form-control {
+    font-size: 0.5rem;
+  }
+
+
+  /* font sizes */
+  h3,h4{
+    font-size: 1rem !important;
+  }
+
+ 
+
+
+}
