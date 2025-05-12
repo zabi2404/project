@@ -14,7 +14,7 @@ for (let i = 0; i < button.length; i++) {
 let input = document.getElementsByTagName("input");
 for (let i = 0; i <= 2; i++) {
   input[i].addEventListener("click", () => {
-    
+
     console.log(input[i]);
     for (let j = 0; j <=2; j++) {
       input[j].classList.remove("activeinput");
@@ -28,3 +28,4 @@ window.addEventListener("click", () => {
     input[j].classList.remove("activeinput");
   }
 });
+
