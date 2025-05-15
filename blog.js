@@ -5,54 +5,63 @@ const cardData = [
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
+    link: "./blog2.html",
   },
   {
     img: "./images/Frame 1261153021 (1).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
+    link: "./blog2.html",
   },
   {
     img: "./images/Frame 1261153021 (2).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
+    link: "./blog2.html",
   },
   {
     img: "./images/Frame 1261153021 (3).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
+    link: "./blog2.html",
   },
   {
     img: "./images/Frame 1261153021 (4).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
+    link: "./blog2.html",
   },
   {
     img: "./images/Frame 1261153021 (2).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
+    link: "./blog2.html",
   },
   {
     img: "./images/Frame 1261153021 (3).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
+    link: "./blog2.html",
   },
   {
     img: "./images/Frame 1261153021 (4).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
+    link: "./blog2.html",
   },
   {
     img: "./images/Frame 1261153021 (1).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
+    link: "./blog2.html",
   },
 ];
 
@@ -82,7 +91,7 @@ function createCard(data) {
               <h4>${data.heading}</h4>
               <p>${data.description}</p>
               <div>
-                <a href="" >Read Blog <img src="./images/icons/Frame.svg" alt=""></a>
+                <a href="${data.link}" >Read Blog <img src="./images/icons/Frame.svg" alt=""></a>
               </div>
             </div>
           

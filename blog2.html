@@ -57,19 +57,37 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control btn-gradient-2 me-2" type="search" placeholder="Search"
-                        aria-label="Search" />
+                    <div class="input-wrapper">
+                        <input class="form-control btn-gradient-2" type="search" placeholder="Search"
+                            aria-label="Search" />
+                        <img src="./images/icons/material-symbols_search.svg" class="input-icon" alt="Search" />
+                    </div>
                 </form>
-                <div class="icon btn-gradient-2" style="margin: 0 1rem">
-                    <img src="./images/icons/icons8-bell-96.png" width="60%" alt="" />
-                </div>
-                <div class="profile-icon">
+                        <div class="icon " style="margin: 0 1rem">
+                            <img src="./images/icons/icons8-bell-96.png" width="60%" alt="" />
+                        </div>
+                <div id="PF-icon" class="profile-icon">
                     <img src="https://cdn.pixabay.com/photo/2021/02/03/09/44/portrait-5977311_1280.jpg" height="40px"
                         width="40px" alt="" />
                 </div>
             </div>
         </div>
     </nav>
+
+<!-- Modal  -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="GradientWrapper">
+            <div class="GradientM GM1"></div>
+            <div class="GradientM GM2"></div>
+            <div class="GradientM GM3"></div>
+            <div class="GradientM GC4"></div>
+        </div>
+        <span id="closeM" class="close">&times;</span>
+        <p class="modalp">content</p>
+    </div>
+
+</div>
 
     <!-- Article section -->
     <div class="Article-section">
@@ -92,7 +110,7 @@
                 </div>
                 <div class="blog-part">
                     <div>
-                        <h3>Exploring Generative AI in Content Creation</h3>
+                        <h4>Exploring Generative AI in Content Creation</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis velit consectetur molestiae
                             eum, omnis voluptatibus nemo modi illo ullam at ducimus aliquid sed alias ea corporis
                             possimus
@@ -114,7 +132,7 @@
                             corporis
                             possimus
                             nihil sequi dolor?</p>
-                        <h3>Exploring Generative AI in Content Creation</h3>
+                        <h4>Exploring Generative AI in Content Creation</h4>
                         <p>Lorem ipsum olestiae
                             eum, omnis voluptatibus nemo modi illo ullam at ducimus aliquid sed alias ea
                             corporis
@@ -142,8 +160,8 @@
                             nihil sequi dolor?</p>
                     </div>
                     <div class="blog-img">
-                        <h3>Afterword: The AI Behind This Article</h3>
-                        <img src="./images/Frame 29.svg" alt="">
+                        <h4>Afterword: The AI Behind This Article</h4>
+                        <img class="bloged-img" src="./images/Frame 29.svg" alt="">
                     </div>
                     <div class="blog-footer">
 
@@ -151,7 +169,7 @@
                             <p>Like what you see? Share with your friends.</p>
                         </div>
 
-                        <div class="blog-icons">
+                        <div class="blog-icons blog-icons2">
                             <img src="./images/icons/facebook (1) (1).svg" alt="">
                             <img src="./images/icons/twitter (1) (1).svg" alt="">
                             <img src="./images/icons/linkedin (1) 1 (1).svg" alt="">
@@ -167,16 +185,25 @@
                         <th>In this article</th>
                     </tr>
                     <tr>
-                        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
+                        <td>Exploring Generative AI in Content Creation</td>
                     </tr>
                     <tr>
-                        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
+                        <td>Steering Clear of Common AI Writing Pitfalls</td>
                     </tr>
                     <tr>
-                        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
+                        <td>Understanding ChatGPT Capabilities - Define Your Style</td>
                     </tr>
                     <tr>
-                        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
+                        <td>Understand Your Readers</td>
+                    </tr>
+                    <tr>
+                        <td>Creating Quality AI-powered Blogs that Stand Out</td>
+                    </tr>
+                    <tr>
+                        <td>Conclusion: Embracing AI in Blog Creation</td>
+                    </tr>
+                    <tr>
+                        <td>Afterword: The AI Behind This Article</td>
                     </tr>
                 </table>
             </div>
@@ -324,6 +351,7 @@
             </div>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>

@@ -61,12 +61,15 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control btn-gradient-2 me-2" type="search" placeholder="Search" aria-label="Search" />
+          <div class="input-wrapper">
+            <input class="form-control btn-gradient-2" type="search" placeholder="Search" aria-label="Search" />
+            <img src="./images/icons/material-symbols_search.svg" class="input-icon" alt="Search" />
+          </div>
         </form>
-        <div class="icon btn-gradient-2" style="margin: 0 1rem">
+        <div class="icon " style="margin: 0 1rem">
           <img src="./images/icons/icons8-bell-96.png" width="60%" alt="" />
         </div>
-        <div class="profile-icon">
+        <div id="PF-icon" class="profile-icon">
           <img src="https://cdn.pixabay.com/photo/2021/02/03/09/44/portrait-5977311_1280.jpg" height="40px" width="40px"
             alt="" />
         </div>
@@ -74,6 +77,22 @@
     </div>
   </nav>
 
+ <!-- Modal  -->
+  <div id="myModal" class="modal">   
+    <div class="modal-content">
+      <div class="GradientWrapper">
+        <div class="GradientM GM1"></div>
+        <div class="GradientM GM2"></div>
+        <div class="GradientM GM3"></div>
+        <div class="GradientM GC4"></div>
+      </div>
+      <span id="closeM" class="close">&times;</span>
+      <p class="modalp">content</p>
+    </div>
+
+  </div>
+
+  
   <!-- HEADER -->
   <div class="Container">
     <div class="gradient g1"></div>
@@ -264,7 +283,7 @@
             <div class="GradientL GL4"></div>
           </div>
 
-          <h3>New Listing</h3>
+          <h3 class="underline">New Listing</h3>
 
           <div class="table-scroll">
             <table>
@@ -352,9 +371,10 @@
         </p>
       </div>
 
-
+      <div class="input-wrapper">
       <input class="form-control1 btn-gradient-2 input2" type="search" placeholder="Search for coins" />
-
+      <img src="./images/icons/material-symbols_search.svg" class="input-icon" alt="Search" />
+    </div>
     </div>
     <div class="Coin-Table">
       <div class="GradientWrapper">
@@ -464,7 +484,12 @@
           ReaL-time prices,market changes & vaulation across asset classes
         </p>
       </div>
-      <input class="form-control1 btn-gradient-2" type="search" placeholder="Search for coins" />
+      
+      <div class="input-wrapper">
+        <input class="form-control1 btn-gradient-2 input2" type="search" placeholder="Search for coins" />
+        <img src="./images/icons/material-symbols_search.svg" class="input-icon" alt="Search" />
+      </div>
+    
     </div>
 
     <div class="Coin-Table-nav">
@@ -711,11 +736,11 @@
             <div class="GradientL GL3"></div>
             <div class="GradientL GL4"></div>
           </div>
-          <p>20/01/2025</p>
+          <p class="dateLC">20/01/2025</p>
           <h4>Cracking the Crypto Code</h4>
           <p>A deep dive into blockchain trading stratgies and trends</p>
           <div>
-            <a href="">Read Blog <img src="./images/icons/Frame.svg" alt=""></a>
+            <a href="./blog2.html">Read Blog <img src="./images/icons/Frame.svg" alt=""></a>
           </div>
         </div>
       </div>
@@ -731,11 +756,11 @@
             <div class="GradientL GL3"></div>
             <div class="GradientL GL4"></div>
           </div>
-          <p>20/01/2025</p>
+          <p class="dateLC">20/01/2025</p>
           <h4>Cracking the Crypto Code</h4>
           <p>A deep dive into blockchain trading stratgies and trends</p>
           <div>
-            <a href="">Read Blog<img src="./images/icons/Frame.svg" alt=""></a>
+            <a href="./blog2.html">Read Blog<img src="./images/icons/Frame.svg" alt=""></a>
           </div>
         </div>
       </div>
@@ -751,11 +776,11 @@
             <div class="GradientL GL3"></div>
             <div class="GradientL GL4"></div>
           </div>
-          <p>20/01/2025</p>
+          <p class="dateLC">20/01/2025</p>
           <h4>Cracking the Crypto Code</h4>
           <p>A deep dive into blockchain trading stratgies and trends</p>
           <div>
-            <a href="">Read Blog<img src="./images/icons/Frame.svg" alt=""></a>
+            <a href="./blog2.html">Read Blog<img src="./images/icons/Frame.svg" alt=""></a>
           </div>
         </div>
       </div>
@@ -771,11 +796,11 @@
             <div class="GradientL GL3"></div>
             <div class="GradientL GL4"></div>
           </div>
-          <p>20/01/2025</p>
+          <p class="dateLC">20/01/2025</p>
           <h4>Cracking the Crypto Code</h4>
           <p>A deep dive into blockchain trading stratgies and trends</p>
           <div>
-            <a href="">Read Blog<img src="./images/icons/Frame.svg" alt=""></a>
+            <a href="./blog2.html">Read Blog<img src="./images/icons/Frame.svg" alt=""></a>
           </div>
         </div>
       </div>
@@ -791,11 +816,11 @@
             <div class="GradientL GL3"></div>
             <div class="GradientL GL4"></div>
           </div>
-          <p>20/01/2025</p>
+          <p class="dateLC">20/01/2025</p>
           <h4>Cracking the Crypto Code</h4>
           <p>A deep dive into blockchain trading stratgies and trends</p>
           <div>
-            <a href="">Read Blog<img src="./images/icons/Frame.svg" alt=""></a>
+            <a href="./blog2.html">Read Blog<img src="./images/icons/Frame.svg" alt=""></a>
           </div>
         </div>
       </div>
@@ -831,7 +856,7 @@
         <p>Continue Journey with Esyasoft and watch your health grow!</p>
         <a href="#" class="myButton btn2">Get Started</a>
       </div>
-      <div>
+      <div class="mainimg-section">
         <img class="main-img" src="./images/MAIN 1.png" alt="" />
       </div>
     </div>
