@@ -10,7 +10,19 @@ body {
   --tab-heading-size: 2rem;
   --tab-text-size: 1rem;
   --mobile-heading-size: 1.5rem;
-  --mobile-text-size: .875rem;
+  --mobile-text-size: 1rem;
+}
+
+/* CUSTOM FONTS */
+
+@font-face {
+  font-family: customFont;
+  src: url(./sf-pro-display/SFPRODISPLAYBOLD.OTF);
+}
+
+@font-face {
+  font-family: customFontRegular;
+  src: url(./sf-pro-display/SFPRODISPLAYREGULAR.OTF);
 }
 
 
@@ -25,31 +37,26 @@ h1 {
   -webkit-text-fill-color: transparent;
   font-family: customFont, sans-serif;
 }
- 
-h2,h3,h4{
+
+h2,
+h3,
+h4 {
   font-family: customFontRegular;
 }
 
-p{
+p {
   opacity: 70%;
 }
 
-p,ul,a, table th,td {
+p,
+ul,
+a,
+table th,
+td {
   font-size: var(--laptop-text-size) !important;
   font-family: customFontRegular;
 }
 
-/* CUSTOM FONTS */
-
-@font-face {
-  font-family: customFont;
-  src: url(./sf-pro-display/SFPRODISPLAYBOLD.OTF);
-}
-
-@font-face {
-  font-family: customFontRegular;
-  src: url(./sf-pro-display/SFPRODISPLAYREGULAR.OTF);
-}
 
 
 
@@ -152,13 +159,13 @@ button:focus {
 
 .g1 {
   position: absolute;
-    top: 50px;
-    height: 35vw;
-    right: 1px;
-    z-index: -1;
-    width: 45vw;
-    opacity: .2;
-    left: auto;
+  top: 50px;
+  height: 35vw;
+  right: 1px;
+  z-index: -1;
+  width: 45vw;
+  opacity: .2;
+  left: auto;
 
 }
 
@@ -380,9 +387,9 @@ button:focus {
   backdrop-filter: blur(9.1px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 
-    
-    
-    
+
+
+
 }
 
 /* .. */
@@ -461,11 +468,12 @@ button:focus {
 .table-scroll tr td:nth-child(3) {
   color: #1ab593;
 }
+
 .table-scroll tr td:nth-child(1) {
   display: flex;
-      justify-content: center;
-      align-items: center;
- gap: .2rem;
+  justify-content: center;
+  align-items: center;
+  gap: .2rem;
 }
 
 
@@ -483,15 +491,15 @@ button:focus {
 
 }
 
-.Card .line-1 p:nth-of-type(2){
+.Card .line-1 p:nth-of-type(2) {
   color: red;
 }
 
-.Card .line-1 p:nth-child(1){
+.Card .line-1 p:nth-child(1) {
   font-size: 2rem !important;
   font-family: customFont, sans-serif;
   opacity: initial;
-  
+
 }
 
 .line-2 p[style] {
@@ -510,7 +518,7 @@ button:focus {
 
 }
 
-.line-2 :nth-child(2){
+.line-2 :nth-child(2) {
   margin-right: 0;
 }
 
@@ -603,19 +611,25 @@ button:focus {
 
 
 .form-control1 {
-padding: .6rem 5.5rem .6rem 2.5rem;
-width: 100%;
+  padding: .6rem 5.5rem .6rem 2.5rem;
+  width: 100%;
 }
-input.form-control1::placeholder{
-    
+
+.navFormcontrol {
+  padding: .45rem 3rem .45rem 2.5rem;
+}
+
+input.form-control1::placeholder {
+
   opacity: 70%;
 }
 
-.Coin-Table td:nth-child(1),.Coin-Table2 tr td:nth-child(1){
+.Coin-Table td:nth-child(1),
+.Coin-Table2 tr td:nth-child(1) {
   display: flex;
-      justify-content: center;
-      align-items: center;
- gap: .2rem;
+  justify-content: center;
+  align-items: center;
+  gap: .2rem;
 }
 
 
@@ -647,7 +661,7 @@ input.form-control1::placeholder{
   border: 1px solid rgba(255, 255, 255, 0.3);
   margin: 0 3rem;
   overflow: hidden;
-  width: 73%;
+  width: 81%;
   overflow-x: scroll;
   scrollbar-width: none;
 
@@ -683,7 +697,7 @@ th {
   position: relative;
   z-index: 2;
   height: 100%;
-scrollbar-width: none;
+  scrollbar-width: none;
 }
 
 th,
@@ -775,7 +789,7 @@ td {
 .table-headers span {
   font-size: .6rem;
   color: white;
-  margin-right: .5rem;
+  margin-right: 0rem;
 }
 
 .Fheader {
@@ -817,8 +831,8 @@ button img {
 
 .input-icon {
   position: absolute;
-    top: 32%;
-    left: 19px;
+  top: 32%;
+  left: 19px;
 }
 
 .btn-gradient-2,
@@ -831,9 +845,10 @@ input:focus {
 
 
 
-  .Coin-Table table tr td:nth-child(4),.Coin-Table2 table tr td:nth-child(4){
-    color: red;
-  }
+.Coin-Table table tr td:nth-child(4),
+.Coin-Table2 table tr td:nth-child(4) {
+  color: red;
+}
 
 
 
@@ -1074,7 +1089,7 @@ select option {
   margin-left: .2rem;
 }
 
-.LC-section h4{
+.LC-section h4 {
   font-weight: bold;
 }
 
@@ -1107,8 +1122,8 @@ select option {
   font-size: 3rem;
   font-family: customFontRegular !important;
   font-weight: normal;
-opacity: .7;
--webkit-text-stroke: 1px #979797;
+  opacity: .7;
+  -webkit-text-stroke: 1px #979797;
 }
 
 .LedgerCard img {
@@ -1272,7 +1287,7 @@ opacity: .7;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  
+
 }
 
 .footer-section li {
@@ -1282,13 +1297,13 @@ opacity: .7;
 
 .fp1 {
   align-items: normal;
-  width: 73%;
+  /* width: 73%; */
 }
 
 
-.fp-li{
+.fp-li {
   font-weight: bold;
-  font-size: 1.4rem;
+
   margin-bottom: 1rem !important;
 }
 
@@ -1297,7 +1312,8 @@ footer {
   position: relative;
   overflow: hidden;
 }
-.fp4 ul{
+
+.fp4 ul {
   display: flex;
   flex-direction: column;
 }
@@ -1404,8 +1420,48 @@ footer {
     width: 30%;
   }
 
-  nav {
-    font-size: 0.5rem;
+
+
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .ms-auto {
+    margin-left: initial !important;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .ms-auto a {
+    font-size: var(--mobile-text-size) !important;
+  }
+
+  .icon,
+  .profile-icon,
+  .profile-icon img {
+    height: 30px;
+    width: 30px;
+    order: -1;
+    margin: 0 !important;
+    position: absolute;
+  }
+
+  .icon {
+    top: 1px;
+    right: 17px;
+  }
+
+  .profile-icon {
+    top: 1px;
+    right: 52px;
+  }
+
+  .icon img {
+    width: 12px;
   }
 
 
@@ -1415,6 +1471,7 @@ footer {
     flex-direction: column;
     align-items: center;
     margin: 0.5rem;
+    margin-top: 3rem;
   }
 
   .heading {
@@ -1424,15 +1481,15 @@ footer {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 1rem 1rem;
+
   }
 
 
 
   .myButton {
-    font-weight: bold;
-    padding: 4px 6px;
-    font-size: 6px;
+    font-weight: normal;
+    padding: 6px 9px;
+
   }
 
   .heading p {
@@ -1462,6 +1519,7 @@ footer {
 
 
   .second-container {
+    margin: .5rem;
     margin-top: 3rem;
   }
 
@@ -1472,7 +1530,7 @@ footer {
 
   .table-scroll {
     overflow-y: auto;
-    max-height: 180px;
+    max-height: 220px;
     scrollbar-width: none;
   }
 
@@ -1508,13 +1566,18 @@ footer {
   }
 
   .card-header h4 {
-    font-size: 0.7rem !important;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+  }
+
+  .Card .line-1 p:nth-child(1) {
+    font-size: 1.1rem !important;
+    margin: -8px 2px;
     font-weight: bold;
   }
 
   .Card p {
-    font-size: 0.8rem;
-    margin: -8px 2px;
+    margin-bottom: 0;
   }
 
   .Card {
@@ -1533,8 +1596,7 @@ footer {
   }
 
   .line-2 p {
-    font-size: 0.6rem;
-    font-weight: bold;
+
     margin: 0 0 0 0 !important;
   }
 
@@ -1551,10 +1613,13 @@ footer {
     height: 100%;
     margin-bottom: 1rem;
     overflow-y: scroll;
-    padding-top: 1rem;
+    padding-top: .5rem;
 
   }
 
+  .underline {
+    padding-bottom: 0;
+  }
 
 
   .listing-box table {
@@ -1581,8 +1646,7 @@ footer {
   }
 
   .Theader {
-    margin-top: 1rem;
-    margin-bottom: auto;
+    margin: 1rem 0 auto;
   }
 
   .Theader div {
@@ -1593,7 +1657,8 @@ footer {
     font-size: 0.5rem;
   }
 
-  .Coin-Table {
+  .Coin-Table,
+  .Coin-Table2 {
     margin: 1rem 1rem 1rem 1rem;
     overflow-x: scroll;
     width: 300px;
@@ -1603,13 +1668,14 @@ footer {
   .form-control1 {
     width: 55%;
     font-size: 0.5rem;
-    text-align: center;
+
   }
 
-  
+
 
 
   .third-section {
+    margin: .5rem;
     margin-bottom: auto;
   }
 
@@ -1626,7 +1692,7 @@ footer {
 
   th,
   td {
-    padding: 0.4rem 0.6rem;
+    padding: 0.6rem 0.6rem;
     text-align: center;
     white-space: nowrap;
   }
@@ -1639,9 +1705,8 @@ footer {
   }
 
   .form-control1 {
-    padding: 0.2rem .5rem .2rem 1rem;
-    font-size: .5rem;
-    background-size: 7px;
+    padding: .4rem 2.5rem .4rem 1.5rem;
+    width: 100%;
   }
 
 
@@ -1651,6 +1716,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: .5rem;
   }
 
 
@@ -1675,12 +1741,9 @@ footer {
 
   .Coin-Table2 {
     overflow-x: scroll;
-    margin: 1rem;
+    margin: 1rem 0 1rem;
   }
 
-  tr {
-    font-size: 0.5rem;
-  }
 
   th img {
     width: 10px;
@@ -1723,14 +1786,14 @@ footer {
 
   .input-icon {
     position: absolute;
-    top: 43%;
-    left: 22px;
-    width: 8%;
+    top: 38%;
+    left: 13px;
+    width: 7%;
   }
 
   /* fifth section */
-  .Fiheader {
-    margin: 0 1rem;
+  .Fifth-Section {
+    margin: .5rem;
   }
 
   .Feature-card img {
@@ -1764,8 +1827,8 @@ footer {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    width: 40%;
-    height: 40%;
+    min-width: 40%;
+    min-height: 40%;
     padding: .5rem;
     margin: .5rem;
   }
@@ -1786,7 +1849,6 @@ footer {
   }
 
   .Sheader {
-    margin: 0 1.5rem;
     text-align: center;
   }
 
@@ -1798,11 +1860,9 @@ footer {
     margin: 0.5rem;
   }
 
-  .LedgerCard {
-    margin: 1rem 2rem 0 2rem;
-
-    /* height: 150px;
-    width: 150px; */
+  .LedgerCard,
+  .LC {
+    margin: .5rem;
     border-radius: 26px;
   }
 
@@ -1818,7 +1878,7 @@ footer {
 
   .LC-section h4 {
     font-size: 1rem !important;
-    margin-bottom: .2rem;
+
   }
 
   .LC-section p {
@@ -1830,19 +1890,19 @@ footer {
     font-size: 0.5rem;
   }
 
-  a img {
+  /* a img {
     width: 20% !important;
     margin-left: .1rem;
     margin-bottom: .1rem;
-  }
+  } */
 
   .LC {
 
-    margin: 1rem 2rem 0 2rem;
-    /* height: 150px;
-    width: 150px; */
-    border-radius: 26px;
     justify-content: center;
+  }
+
+  .LedgerFullCard h4 {
+    font-size: 2rem !important;
   }
 
   .LFC {
@@ -1852,14 +1912,10 @@ footer {
 
   /* SEVENTH SECTION */
   .Seventh-section {
-    margin: 5rem 1rem 2rem 1rem;
+    margin: 2rem 1rem;
   }
 
 
-  .first-half h1 {
-    font-size: 1rem !important;
-    max-width: 90%;
-  }
 
   .first-half {
     display: flex;
@@ -1869,7 +1925,7 @@ footer {
   }
 
   .GetStarted-Section {
-    padding: 1rem;
+    padding: .5rem;
     margin: unset;
 
     text-align: center;
@@ -1902,8 +1958,8 @@ footer {
   .footer-section {
     display: flex;
     flex-direction: column;
-
-    padding-bottom: .5rem;
+    padding: 1rem;
+    padding-bottom: 0;
   }
 
   .fp1 {
@@ -1913,15 +1969,17 @@ footer {
 
 
   .logo {
-    width: 20% !important;
+    width: 40% !important;
     margin-bottom: .5rem !important;
   }
 
   .footer-part ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     padding-left: 0;
-    margin-bottom: 0;
+    margin: 0.3rem;
+  }
+
+  .footer-part ul li:nth-child(1) {
+    margin-bottom: .5rem !important;
   }
 
   .footer-part {
@@ -1934,7 +1992,8 @@ footer {
   }
 
   .footer-part ul li {
-    margin: unset;
+    margin: unset !important;
+
   }
 
   .footer-icon img {
@@ -1949,14 +2008,12 @@ footer {
   }
 
   .icon-div {
-    height: 17px;
-    width: 17px;
-    padding: .2rem .3rem .5rem .1rem;
+    height: 25px;
+    width: 25px;
+    padding: .2rem .2rem .3rem .2rem;
   }
 
-  .footer-part ul {
-    font-size: 0.5rem;
-  }
+
 
   .fp-li {
     font-weight: bolder;
@@ -1974,16 +2031,35 @@ footer {
   h2,
   h3,
   h4 {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
   }
 
   h1 {
-    font-size: 1.5rem !important;
+    font-size: var(--mobile-heading-size) !important;
     margin-bottom: 0;
   }
 
   p {
-    font-size: 0.875rem !important;
+    font-size: var(--mobile-text-size) !important;
+  }
+
+  p,
+  table th {
+    font-size: var(--mobile-text-size) !important;
+    font-family: customFontRegular !important;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-family: customFontRegular;
+  }
+
+  td,
+  a,
+  ul {
+    font-size: .9rem !important;
+    font-family: customFontRegular !important;
   }
 
 
@@ -1996,12 +2072,58 @@ footer {
   }
 
 
+  /* navbar */
+
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .ms-auto {
+    margin-left: initial !important;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .ms-auto a {
+    font-size: var(--tab-text-size) !important;
+  }
+
+  .icon,
+  .profile-icon,
+  .profile-icon img {
+    height: 35px;
+    width: 35px;
+    order: -1;
+    margin: 0 !important;
+    position: absolute;
+  }
+
+  .icon {
+    top: 1px;
+    right: 17px;
+  }
+
+  .profile-icon {
+    top: 1px;
+    right: 55px;
+  }
+
+  .icon img {
+    width: 12px;
+  }
+
+
   /* FIRST SECTION */
   .Container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0.5rem;
+    margin-top: 3rem;
   }
 
   .heading {
@@ -2011,7 +2133,7 @@ footer {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 1rem 2rem;
+
   }
 
 
@@ -2072,14 +2194,14 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0px 2.5rem;
+
   }
 
 
 
   .continer {
     height: initial;
-    width: 150px;
+    width: 200px;
   }
 
 
@@ -2090,7 +2212,7 @@ footer {
   .Coins {
     grid-template-columns: 1fr 1fr;
 
-    margin: .5rem 2rem;
+    margin: .5rem 0;
   }
 
   .card-header img {
@@ -2099,13 +2221,17 @@ footer {
   }
 
   .card-header h4 {
-    font-size: 0.7rem !important;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  .Card .line-1 p:nth-child(1) {
+    font-size: 1.2rem !important;
     font-weight: bold;
   }
 
   .Card p {
-    font-size: 0.8rem;
-    margin: -8px 2px;
+    margin: auto;
   }
 
   .Card {
@@ -2128,8 +2254,6 @@ footer {
   }
 
   .line-2 p {
-    font-size: 0.6rem;
-    font-weight: bold;
     margin: 0 0 0 0 !important;
   }
 
@@ -2155,15 +2279,15 @@ footer {
 
 
   .listing-box table {
-    width: 250px;
-    height: 250px;
+    min-width: 390px;
+    min-height: 310px;
     overflow-y: scroll;
 
   }
 
   .listing-box img {
-    height: 15px;
-    width: 15px;
+    height: 20%;
+    width: 20%;
   }
 
   /* THIRD SECTION */
@@ -2193,11 +2317,6 @@ footer {
   }
 
 
-  .form-control1 {
-    width: 55%;
-    font-size: 0.5rem;
-    text-align: center;
-  }
 
   .third-section {
     margin: .1rem 4rem;
@@ -2216,7 +2335,7 @@ footer {
 
   th,
   td {
-    padding: 0.4rem 0.8rem;
+    padding: 1rem 0.8rem;
     text-align: center;
     white-space: nowrap;
   }
@@ -2224,22 +2343,22 @@ footer {
 
   td img {
 
-    width: 20%;
+    width: 30px;
 
-    height: 20%;
+    height: 30px;
   }
 
   .input-icon {
     position: absolute;
-    top: 39%;
-    left: 10px;
-    width: 10%;
+    top: 29%;
+    left: 14px;
+    width: 8%;
   }
 
   .form-control1 {
-    padding: 0.3rem 0rem .3rem 0.3rem;
-    font-size: .5rem;
-    background-size: 12px;
+    padding: .4rem 1.3rem .4rem 2rem;
+    font-size: .85rem;
+
 
   }
 
@@ -2370,12 +2489,16 @@ footer {
     margin: .5rem;
   }
 
-  .Fcard p,
-  h4 {
+  .Fcard p {
     margin-bottom: .5rem;
   }
 
   /* SIXTH SECTION */
+
+  .Sixth-Section {
+    margin: .5rem;
+  }
+
   .Sheader p {
     text-align: center;
   }
@@ -2432,11 +2555,11 @@ footer {
     font-size: 0.5rem;
   }
 
-  a img {
+  /* a img {
     width: 20% !important;
     margin-left: .1rem;
     margin-bottom: .1rem;
-  }
+  } */
 
   .LC {
     margin: .5rem;
@@ -2510,9 +2633,9 @@ footer {
   }
 
   .icon-div {
-    height: 20px;
-    width: 20px;
-    padding: .2rem .3rem .5rem .1rem;
+    height: 30px;
+    width: 30px;
+    padding: .2rem .2rem .3rem .2rem;
   }
 
   .footer-part ul {
@@ -2532,18 +2655,78 @@ footer {
   h2,
   h3,
   h4 {
-    font-size: 1.2rem !important;
+    font-size: 1.3rem !important;
+    font-family: customFontRegular;
   }
 
   h1 {
-    font-size: 2rem !important;
+    font-size: var(--tab-heading-size) !important;
     margin-bottom: 0;
   }
 
   p {
-    font-size: 1rem !important;
+    font-size: var(--tab-text-size) !important;
   }
 
+  p,
+  table th {
+    font-size: var(--tab-text-size) !important;
+    font-family: customFontRegular !important;
+  }
+
+
+
+  td,
+  a,
+  ul {
+    font-size: .85rem !important;
+    font-family: customFontRegular !important;
+  }
+
+
+
+
+}
+
+
+@media (min-width:771px) and (max-width: 991px) {
+  
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.ms-auto {
+  margin-left: initial !important;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.ms-auto a {
+  font-size: var(--laptop-text-size) !important;
+}
+
+.icon,
+.profile-icon,
+.profile-icon img {
+ 
+  order: -1;
+  margin: 0 !important;
+  position: absolute;
+}
+
+.icon {
+  top: 1px;
+  right: 17px;
+}
+
+.profile-icon {
+  top: 1px;
+  right: 60px;
+}
 
 }
 
@@ -2553,6 +2736,10 @@ footer {
   .background-image {
     top: 271px;
   }
+
+/* navbar */
+
+
 
 
 
@@ -2686,7 +2873,7 @@ footer {
   }
 
   .LFC h4 {
-    font-size: 2.5rem;
+    font-size: 3.5rem !important;
 
   }
 
@@ -2713,16 +2900,24 @@ footer {
   h2,
   h3,
   h4 {
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
+    font-family: customFontRegular;
   }
 
   h1 {
-    font-size: 2.5rem !important;
+    font-size: 2.3rem !important;
     margin-bottom: 0;
   }
 
   p {
-    font-size: 1.125rem !important;
+    font-size: 1.1rem !important;
+  }
+
+  td,
+  a,
+  ul {
+    font-size: 1rem !important;
+    font-family: customFontRegular !important;
   }
 
 
@@ -2868,9 +3063,9 @@ footer {
     width: 20% !important;
   }
 
-  .Blog-header-Left img {
-    width: 5% !important;
-  }
+  /* .Blog-header-Left img {
+    width: 5.5% !important;
+  } */
 
   .btn-gradient-2,
   .btn-gradient-3 {
@@ -2878,7 +3073,8 @@ footer {
   }
 
   .BlogLedger-Section {
-    margin: auto;
+    
+    margin: .5rem;
   }
 }
 
@@ -3068,7 +3264,7 @@ footer {
 
   .Article-secondpart {
     grid-template-columns: 1fr;
-    margin: 2rem 2rem 1rem 2rem;
+    margin: .5rem;
   }
 
   .Article-section h2,
@@ -3096,7 +3292,7 @@ footer {
 
 
   .icons-part img {
-    width: 3% !important;
+    width: 5.5% !important;
   }
 
   .blog-icons2 {
@@ -3264,7 +3460,7 @@ footer {
   }
 }
 
-@media (min-width:770px) and (max-width: 1050px) {
+@media (min-width:770px) and (max-width: 1130px) {
   .top-image {
     width: 95%;
   }
@@ -3340,4 +3536,3 @@ footer {
     font-size: var(--laptop-text-size) !important;
   }
 }
-

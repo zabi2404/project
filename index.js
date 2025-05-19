@@ -58,63 +58,63 @@ window.addEventListener("click", (e) => {
 // GENERATING CARDS DYNAMICALLY
 const cardData = [
   {
-    img: "./images/Frame 1261153021.png",
+    img: "./images/icons/LEDGER-CARD/Frame 1261153021.png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
     link: "./blog2.html",
   },
   {
-    img: "./images/Frame 1261153021 (1).png",
+    img: "./images/icons/LEDGER-CARD//Frame 1261153021 (1).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
     link: "./blog2.html",
   },
   {
-    img: "./images/Frame 1261153021 (2).png",
+    img: "./images/icons/LEDGER-CARD//Frame 1261153021 (2).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
     link: "./blog2.html",
   },
   {
-    img: "./images/Frame 1261153021 (3).png",
+    img: "./images/icons/LEDGER-CARD//Frame 1261153021 (3).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
     link: "./blog2.html",
   },
   {
-    img: "./images/Frame 1261153021 (4).png",
+    img: "./images/icons/LEDGER-CARD//Frame 1261153021 (4).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
     link: "./blog2.html",
   },
   {
-    img: "./images/Frame 1261153021 (2).png",
+    img: "./images/icons/LEDGER-CARD//Frame 1261153021 (2).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
     link: "./blog2.html",
   },
   {
-    img: "./images/Frame 1261153021 (3).png",
+    img: "./images/icons/LEDGER-CARD//Frame 1261153021 (3).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
     link: "./blog2.html",
   },
   {
-    img: "./images/Frame 1261153021 (4).png",
+    img: "./images/icons/LEDGER-CARD//Frame 1261153021 (4).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
     link: "./blog2.html",
   },
   {
-    img: "./images/Frame 1261153021 (1).png",
+    img: "./images/icons/LEDGER-CARD//Frame 1261153021 (1).png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
     description: "A deep dive into blockchain trading stratgies and trends",
@@ -122,16 +122,38 @@ const cardData = [
   },
 ];
 
+const currentPage = window.location.pathname;
 let container = document.getElementById("ledger-container");
 if(container){
 let loadbutton = document.getElementById("loadmore");
 
+
+const batchSizeMap = {
+  "/blog.html": 6,
+  "/index.html": 5,
+  "/blog2.html": 3,
+};
+
+let batchsize = 0;
+batchsize = batchSizeMap[currentPage] || 0;
+console.log(currentPage + batchsize)
+
 let index = 0;
-let batchsize = 6;
+
+
 
 function createCard(data) {
+  
   const card = document.createElement("div");
-  card.className = "LedgerCard blogledgercard";
+
+   if (batchsize === 3) {
+     card.className = "LedgerCard ";
+     
+   } else if (batchsize === 6) {
+     card.className = "LedgerCard blogledgercard";
+   } else {
+     card.className = "LedgerCard";
+   }
   card.innerHTML = `
       
        
@@ -149,7 +171,7 @@ function createCard(data) {
               <h4>${data.heading}</h4>
               <p>${data.description}</p>
               <div>
-                <a href="${data.link}" >Read Blog <img src="./images/icons/Frame.svg" alt=""></a>
+                <a href="${data.link}" >Read Blog <img src="./images/icons/LEDGER-CARD/Frame.svg" alt=""></a>
               </div>
             </div>
           
@@ -159,22 +181,33 @@ function createCard(data) {
   return card;
 }
 
-function loadCard() {
-  const nextiterate = cardData.slice(index, index + batchsize);
-  nextiterate.forEach((data) => {
-    container.appendChild(createCard(data));
-  });
-  index += batchsize;
 
-  if (index >= cardData.length) {
-    loadbutton.style.display = "none";
+  function loadCard() {
+    const nextiterate = cardData.slice(index, index + batchsize);
+    nextiterate.forEach((data) => {
+      container.insertBefore(createCard(data), container.firstChild);
+
+    });
+    index += batchsize;
+  
+    if (index >= cardData.length) {
+      loadbutton.style.display = "none";
+    }
   }
-}
-
+  
+  if(currentPage=='/blog.html'){
 loadbutton.addEventListener("click", (e)=>{
-    e.preventDefault;
+    e.preventDefault();
     loadCard();
 });
-
+  }
+  
 loadCard();
 }
+
+
+
+
+
+
+
