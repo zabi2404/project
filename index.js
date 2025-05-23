@@ -1,7 +1,9 @@
+
+
+// COIN TABLE BUTTONS
 let buttonDiv = document.getElementsByClassName("Coin-Table-nav")[0];
 
-
-if(buttonDiv){
+if (buttonDiv) {
   let button = buttonDiv.getElementsByClassName("btn");
   for (let i = 0; i < button.length; i++) {
     button[i].addEventListener("click", () => {
@@ -19,8 +21,8 @@ let profileIcon = document.getElementById("PF-icon");
 let modal = document.getElementById("myModal");
 let close = document.getElementById("closeM");
 
-profileIcon.addEventListener("click", ()=>{
-modal.style.display="block";
+profileIcon.addEventListener("click", () => {
+  modal.style.display = "block";
 });
 
 close.addEventListener("click", () => {
@@ -28,36 +30,19 @@ close.addEventListener("click", () => {
 });
 
 window.addEventListener("click", (e) => {
-  if (e.target==modal) {
+  if (e.target == modal) {
     modal.style.display = "none";
   }
-  
+
 });
 
 
-// let input = document.getElementsByTagName("input");
-// for (let i = 0; i <= 2; i++) {
-//   input[i].addEventListener("click", () => {
 
-//     console.log(input[i]);
-//     for (let j = 0; j <=2; j++) {
-//       input[j].classList.remove("activeinput");
-//     }
-//     input[i].classList.add("activeinput");
-//   });
-// }
-
-// window.addEventListener("click", () => {
-//   for (let j = 0; j <= input.length; j++) {
-//     input[j].classList.remove("activeinput");
-//   }
-// });
 
 
 
 // GENERATING CARDS DYNAMICALLY
-const cardData = [
-  {
+const cardData = [{
     img: "./images/icons/LEDGER-CARD/Frame 1261153021.png",
     date: "20/01/2025",
     heading: "Cracking the Crypto Code",
@@ -124,37 +109,37 @@ const cardData = [
 
 const currentPage = window.location.pathname;
 let container = document.getElementById("ledger-container");
-if(container){
-let loadbutton = document.getElementById("loadmore");
+if (container) {
+  let loadbutton = document.getElementById("loadmore");
 
 
-const batchSizeMap = {
-  "/blog.html": 6,
-  "/index.html": 5,
-  "/blog2.html": 3,
-};
+  const batchSizeMap = {
+    "/blog.html": 6,
+    "/index.html": 5,
+    "/blog2.html": 3,
+  };
 
-let batchsize = 0;
-batchsize = batchSizeMap[currentPage] || 0;
-console.log(currentPage + batchsize)
+  let batchsize = 0;
+  batchsize = batchSizeMap[currentPage] || 0;
+  console.log(currentPage + batchsize)
 
-let index = 0;
+  let index = 0;
 
 
 
-function createCard(data) {
-  
-  const card = document.createElement("div");
+  function createCard(data) {
 
-   if (batchsize === 3) {
-     card.className = "LedgerCard ";
-     
-   } else if (batchsize === 6) {
-     card.className = "LedgerCard blogledgercard";
-   } else {
-     card.className = "LedgerCard";
-   }
-  card.innerHTML = `
+    const card = document.createElement("div");
+
+    if (batchsize === 3) {
+      card.className = "LedgerCard ";
+
+    } else if (batchsize === 6) {
+      card.className = "LedgerCard blogledgercard";
+    } else {
+      card.className = "LedgerCard";
+    }
+    card.innerHTML = `
       
        
             <div>
@@ -173,13 +158,12 @@ function createCard(data) {
               <div>
                 <a href="${data.link}" >Read Blog <img src="./images/icons/LEDGER-CARD/Frame.svg" alt=""></a>
               </div>
-            </div>
-          
-      
+            </div>  
       
       `;
-  return card;
-}
+    return card;
+  }
+
 
 
   function loadCard() {
@@ -189,25 +173,168 @@ function createCard(data) {
 
     });
     index += batchsize;
-  
+
     if (index >= cardData.length) {
       loadbutton.style.display = "none";
     }
   }
-  
-  if(currentPage=='/blog.html'){
-loadbutton.addEventListener("click", (e)=>{
-    e.preventDefault();
-    loadCard();
-});
+
+  if (currentPage == '/blog.html') {
+    loadbutton.addEventListener("click", (e) => {
+      e.preventDefault();
+      loadCard();
+    });
   }
-  
-loadCard();
+
+  loadCard();
+}
+
+
+// TRADING PAGE BUTTONS
+
+const Buysell = document.getElementById("buy-sell-buttonID");
+if (Buysell) {
+  const BSButton = Buysell.getElementsByTagName("button");
+
+  for (let i = 0; i < BSButton.length; i++)
+    BSButton[i].addEventListener("click", () => {
+      for (let j = 0; j < BSButton.length; j++) {
+        BSButton[j].classList.remove("buy-sell-button-active")
+      }
+      BSButton[i].classList.add("buy-sell-button-active")
+
+    })
+}
+
+
+const marketLimitButton = document.getElementById("limit-market-buttonID");
+if (marketLimitButton) {
+  const MLButton = marketLimitButton.getElementsByTagName("button");
+
+  for (let i = 0; i < MLButton.length; i++)
+    MLButton[i].addEventListener("click", () => {
+      for (let j = 0; j < MLButton.length; j++) {
+        MLButton[j].classList.remove("limit-market-button-active")
+      }
+      MLButton[i].classList.add("limit-market-button-active")
+
+    })
+}
+
+
+const tradeHistoryButton = document.getElementById("trade-history-buttonsID");
+
+if (tradeHistoryButton) {
+
+
+
+  const THButton = tradeHistoryButton.getElementsByTagName("button");
+
+  for (let i = 0; i < THButton.length; i++)
+    THButton[i].addEventListener("click", () => {
+      for (let j = 0; j < THButton.length; j++) {
+        THButton[j].classList.remove("trade-history-buttons-active")
+      }
+      THButton[i].classList.add("trade-history-buttons-active")
+
+    })
+
+
+
+  const steps = document.querySelectorAll('.step');
+  const lines = document.querySelectorAll('.line');
+  if (steps && lines) {
+    for (let i = 0; i < steps.length; i++) {
+      steps[i].addEventListener('click', function () {
+        for (let j = 0; j <
+          steps.length; j++) {
+          steps[j].classList.toggle('active', j <= i);
+        }
+        for (let k = 0; k <
+          lines.length; k++) {
+          lines[k].classList.toggle('filled', k < i);
+        }
+      });
+    }
+
+  }
+
+
 }
 
 
 
+// DYNAMICALLY GENERATNG FOOTER TO ALL PAGES
+
+const footer = document.getElementById("dynamicfooter");
+if(footer)
+{
 
 
 
+footer.innerHTML = `
+  <div class="footer-section">
+    <div class="GradientWrapper">
+      <div class="GradientFF GFF1"></div>
+      <div class="GradientFF GFF2"></div>
+      <div class="GradientFF GFF3"></div>
+      <div class="GradientFF GFF4"></div>
+    </div>
 
+    <div class="footer-part fp1">
+      <img class="logo" src="./images/icons/LOGOS/esyassoft 1.svg" alt="Logo" style="margin-bottom: 1rem" />
+      <p>
+        Multiply your money! With their user-friendly interface and expert
+        market analysis, you'll be earning more in no time.
+      </p>
+      <div class="footer-icon">
+        <div class="icon-div">
+          <a href="#"><img src="./images/icons/footer-icons/Facebook.svg" alt="facebook-f" /></a>
+        </div>
+        <div class="icon-div">
+          <a href="#"><img src="./images/icons/footer-icons/Twitter.svg" alt="twitter" /></a>
+        </div>
+        <div class="icon-div">
+          <a href="#"><img src="./images/icons/footer-icons/Instagram.svg" alt="instagram-new" /></a>
+        </div>
+        <div class="icon-div">
+          <a href="#"><img src="./images/icons/footer-icons/LinkedIn.svg" alt="linkedin" /></a>
+        </div>
+        <div class="icon-div">
+          <a href="#"><img src="./images/icons/footer-icons/YouTube.svg" alt="youtube-play" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-part">
+      <ul>
+        <li class="fp-li">Product</li>
+        <li>Features</li>
+        <li>Pricing</li>
+        <li>Security</li>
+        <li>Business</li>
+      </ul>
+    </div>
+
+    <div class="footer-part">
+      <ul>
+        <li class="fp-li">Company</li>
+        <li>About Us</li>
+        <li>Careers</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+
+    <div class="footer-part fp4">
+      <ul>
+        <li class="fp-li">Contact Us</li>
+        <li>123, Street, New York</li>
+        <li>info@esyasoft.com</li>
+        <li>(025) 8692700</li>
+      </ul>
+    </div>
+  </div>
+`;
+
+
+}
